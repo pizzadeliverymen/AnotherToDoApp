@@ -3,9 +3,9 @@ import android.app.Application
 
 class AnotherToDoApplication : Application() {
 
-//    override fun onCreate() {
-//        super.onCreate()
-//    TODO: Handle Repository ETC
-//    }
+    override fun onCreate() {
+        super.onCreate()
+        ToDoRepository.initialize(this)
+    }
 
 }
